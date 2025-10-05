@@ -19,7 +19,21 @@ function Navbar() {
         <nav className="navbar">
             <div className="nav-container">
                 <div className="nav-brand">
-                    <span className="nav-icon">🛰️</span>
+                    <svg 
+                        className="nav-icon" 
+                        viewBox="0 0 24 24" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                    >
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M12 1v6m0 6v6"/>
+                        <path d="M1 12h6m6 0h6"/>
+                        <path d="M5.64 5.64l4.24 4.24m4.24 4.24l4.24 4.24"/>
+                        <path d="M18.36 5.64l-4.24 4.24m-4.24 4.24l-4.24 4.24"/>
+                    </svg>
                     <div className="nav-title">
                         <h1>ISS Experience</h1>
                         <p className="nav-subtitle">25 Years of Discovery</p>
