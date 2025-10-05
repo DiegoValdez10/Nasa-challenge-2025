@@ -24,7 +24,7 @@ import Weight from '../../assets/Weight.jpg';
 import VideoReview from '../../assets/VideoReview.jpg';
 import underWater from '../../assets/underWater.jpg';
 import Why from '../../assets/Why.jpg';
-import Iss from '../../assets/ISS.jpg';
+import Iss from '../../assets/ISS2.jpg';
 import modules from '../../assets/module.jpg';
 import repair from '../../assets/repair.jpg';
 import experiment from '../../assets/experiment.jpg';
