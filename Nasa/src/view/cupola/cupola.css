@@ -1,36 +1,18 @@
 /* Cupola Component Styles */
 
-/* Colors */
-:root {
-  --primary: #6366F1;
-  --primary-dark: #4F46E5;
-  --primary-light: #818CF8;
-  --background: #0F172A;
-  --surface: #1E293B;
-  --surface-light: #334155;
-  --accent-purple: #A78BFA;
-  --accent-teal: #2DD4BF;
-  --accent-pink: #F472B6;
-  --text-primary: #F8FAFC;
-  --text-secondary: #CBD5E1;
-  --text-muted: #64748B;
-  --border: #334155;
-  --success: #10B981;
-}
-
 /* Container */
 .cupola-container {
   min-height: 100vh;
-  background-color: var(--background);
-  color: var(--text-primary);
+  background-color: #0F172A;
+  color: #F8FAFC;
 }
 
 /* Hero Section */
 .hero-section {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(to bottom, var(--surface), var(--background));
-  border-bottom: 1px solid var(--border);
+  background: linear-gradient(to bottom, #1E293B, #0F172A);
+  border-bottom: 1px solid #334155;
 }
 
 .hero-background {
@@ -52,7 +34,7 @@
   left: 80px;
   width: 288px;
   height: 288px;
-  background-color: var(--primary);
+  background-color: #6366F1;
 }
 
 .hero-background::after {
@@ -60,7 +42,7 @@
   right: 80px;
   width: 384px;
   height: 384px;
-  background-color: var(--accent-teal);
+  background-color: #2DD4BF;
 }
 
 .hero-content {
@@ -78,14 +60,14 @@
 }
 
 .hero-icon {
-  color: var(--primary);
+  color: #6366F1;
   margin-right: 16px;
 }
 
 .hero-title {
   font-size: 3.75rem;
   font-weight: bold;
-  background: linear-gradient(to right, var(--primary), var(--accent-purple));
+  background: linear-gradient(to right, #6366F1, #A78BFA);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -94,14 +76,14 @@
 
 .hero-subtitle {
   font-size: 1.5rem;
-  color: var(--text-secondary);
+  color: #CBD5E1;
   text-align: center;
   margin-bottom: 16px;
 }
 
 .hero-description {
   font-size: 1.125rem;
-  color: var(--text-muted);
+  color: #64748B;
   text-align: center;
   max-width: 768px;
   margin: 0 auto;
@@ -120,28 +102,28 @@
   font-weight: bold;
   text-align: center;
   margin-bottom: 48px;
-  background: linear-gradient(to right, var(--primary), var(--accent-purple));
+  background: linear-gradient(to right, #6366F1, #A78BFA);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .section-title.gradient-teal {
-  background: linear-gradient(to right, var(--primary), var(--accent-teal));
+  background: linear-gradient(to right, #6366F1, #2DD4BF);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .section-title.gradient-green {
-  background: linear-gradient(to right, var(--primary), var(--success));
+  background: linear-gradient(to right, #6366F1, #10B981);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .section-description {
-  color: var(--text-muted);
+  color: #64748B;
   text-align: center;
   margin-bottom: 48px;
   max-width: 672px;
@@ -159,21 +141,21 @@
 
 /* Card */
 .card {
-  background-color: var(--surface);
+  background-color: #1E293B;
   border-radius: 16px;
   padding: 32px;
-  border: 1px solid var(--border);
+  border: 1px solid #334155;
   transition: border-color 0.3s;
 }
 
 .card:hover {
-  border-color: var(--primary);
+  border-color: #6366F1;
 }
 
 .card-title {
   font-size: 1.5rem;
   font-weight: bold;
-  color: var(--accent-purple);
+  color: #A78BFA;
   margin-bottom: 16px;
 }
 
@@ -182,7 +164,7 @@
 }
 
 .card-text {
-  color: var(--text-secondary);
+  color: #CBD5E1;
   line-height: 1.75;
   margin-bottom: 16px;
 }
@@ -197,16 +179,16 @@
 .spec-item {
   display: flex;
   align-items: flex-start;
-  color: var(--text-secondary);
+  color: #CBD5E1;
 }
 
 .spec-bullet {
-  color: var(--accent-teal);
+  color: #2DD4BF;
   margin-right: 12px;
 }
 
 .spec-item strong {
-  color: var(--text-primary);
+  color: #F8FAFC;
 }
 
 /* Technical Diagram */
@@ -215,10 +197,10 @@
 }
 
 .diagram-container {
-  background-color: var(--background);
+  background-color: #0F172A;
   border-radius: 12px;
   padding: 48px;
-  border: 1px solid var(--border);
+  border: 1px solid #334155;
 }
 
 .diagram-wrapper {
@@ -236,7 +218,7 @@
   width: 192px;
   height: 192px;
   border-radius: 50%;
-  background: linear-gradient(to bottom right, var(--primary), var(--accent-purple));
+  background: linear-gradient(to bottom right, #6366F1, #A78BFA);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -248,21 +230,21 @@
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  background-color: var(--background);
+  background-color: #0F172A;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .cupola-camera {
-  color: var(--accent-teal);
+  color: #2DD4BF;
 }
 
 .cupola-dot {
   position: absolute;
   width: 16px;
   height: 16px;
-  background-color: var(--accent-teal);
+  background-color: #2DD4BF;
   border-radius: 50%;
 }
 
@@ -274,13 +256,13 @@
 .cupola-base {
   width: 128px;
   height: 96px;
-  background: linear-gradient(to bottom, var(--primary-dark), var(--primary));
+  background: linear-gradient(to bottom, #4F46E5, #6366F1);
   border-radius: 0 0 12px 12px;
 }
 
 .diagram-caption {
   text-align: center;
-  color: var(--text-muted);
+  color: #64748B;
   margin-top: 24px;
   font-size: 0.875rem;
 }
@@ -302,16 +284,16 @@
 }
 
 .observation-card {
-  background-color: var(--surface);
+  background-color: #1E293B;
   border-radius: 16px;
   overflow: hidden;
-  border: 1px solid var(--border);
+  border: 1px solid #334155;
   transition: all 0.3s;
   cursor: pointer;
 }
 
 .observation-card:hover {
-  border-color: var(--primary);
+  border-color: #6366F1;
 }
 
 .observation-content {
@@ -328,7 +310,7 @@
   width: 48px;
   height: 48px;
   border-radius: 12px;
-  background: linear-gradient(to bottom right, var(--primary), var(--accent-purple));
+  background: linear-gradient(to bottom right, #6366F1, #A78BFA);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -343,13 +325,13 @@
 .observation-title {
   font-size: 1.25rem;
   font-weight: bold;
-  color: var(--text-primary);
+  color: #F8FAFC;
   margin: 0;
   transition: color 0.3s;
 }
 
 .observation-card:hover .observation-title {
-  color: var(--accent-purple);
+  color: #A78BFA;
 }
 
 .observation-emoji {
@@ -357,7 +339,7 @@
 }
 
 .observation-description {
-  color: var(--text-secondary);
+  color: #CBD5E1;
   line-height: 1.75;
   margin-bottom: 16px;
 }
@@ -365,7 +347,7 @@
 .observation-details {
   margin-top: 16px;
   padding-top: 16px;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid #334155;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -393,18 +375,18 @@
 }
 
 .detail-box {
-  background-color: var(--background);
+  background-color: #0F172A;
   border-radius: 8px;
   padding: 16px;
   border-left: 4px solid;
 }
 
 .detail-box.importance {
-  border-left-color: var(--accent-teal);
+  border-left-color: #2DD4BF;
 }
 
 .detail-box.data {
-  border-left-color: var(--accent-pink);
+  border-left-color: #F472B6;
 }
 
 .detail-label {
@@ -414,22 +396,22 @@
 }
 
 .detail-box.importance .detail-label {
-  color: var(--accent-teal);
+  color: #2DD4BF;
 }
 
 .detail-box.data .detail-label {
-  color: var(--accent-pink);
+  color: #F472B6;
 }
 
 .detail-text {
-  color: var(--text-secondary);
+  color: #CBD5E1;
   font-size: 0.875rem;
   margin: 0;
 }
 
 .observation-visual {
   height: 192px;
-  background: linear-gradient(to bottom right, var(--surface), var(--background));
+  background: linear-gradient(to bottom right, #1E293B, #0F172A);
   position: relative;
   overflow: hidden;
 }
@@ -453,13 +435,13 @@
 .visual-background::before {
   top: 0;
   right: 0;
-  background-color: var(--primary);
+  background-color: #6366F1;
 }
 
 .visual-background::after {
   bottom: 0;
   left: 0;
-  background-color: var(--accent-teal);
+  background-color: #2DD4BF;
 }
 
 .visual-globe {
@@ -467,12 +449,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--border);
+  color: #334155;
   transition: color 0.3s;
 }
 
 .observation-card:hover .visual-globe {
-  color: var(--primary);
+  color: #6366F1;
 }
 
 /* Subsection */
@@ -483,7 +465,7 @@
 .subsection-title {
   font-size: 1.5rem;
   font-weight: bold;
-  color: var(--accent-purple);
+  color: #A78BFA;
   margin-bottom: 24px;
   display: flex;
   align-items: center;
@@ -498,26 +480,26 @@
 }
 
 .instrument-card {
-  background-color: var(--surface);
+  background-color: #1E293B;
   border-radius: 12px;
   padding: 24px;
-  border: 1px solid var(--border);
+  border: 1px solid #334155;
   transition: border-color 0.3s;
 }
 
 .instrument-card:hover {
-  border-color: var(--accent-teal);
+  border-color: #2DD4BF;
 }
 
 .instrument-name {
   font-size: 1.125rem;
   font-weight: bold;
-  color: var(--accent-teal);
+  color: #2DD4BF;
   margin: 0 0 8px 0;
 }
 
 .instrument-purpose {
-  color: var(--text-secondary);
+  color: #CBD5E1;
   font-size: 0.875rem;
   margin: 0;
 }
@@ -545,25 +527,25 @@
 }
 
 .study-check {
-  color: var(--success);
+  color: #10B981;
   margin-right: 12px;
   margin-top: 4px;
   font-size: 1.125rem;
 }
 
 .study-item strong {
-  color: var(--text-primary);
+  color: #F8FAFC;
 }
 
 .study-text {
-  color: var(--text-secondary);
+  color: #CBD5E1;
   font-size: 0.875rem;
   margin: 4px 0 0 0;
 }
 
 /* Collaborations */
 .collaboration-intro {
-  color: var(--text-secondary);
+  color: #CBD5E1;
   margin-bottom: 24px;
   line-height: 1.75;
 }
@@ -575,35 +557,35 @@
 }
 
 .collaboration-card {
-  background-color: var(--background);
+  background-color: #0F172A;
   border-radius: 8px;
   padding: 16px;
-  border: 1px solid var(--border);
+  border: 1px solid #334155;
   text-align: center;
   transition: border-color 0.3s;
 }
 
 .collaboration-card:hover {
-  border-color: var(--primary);
+  border-color: #6366F1;
 }
 
 .collaboration-org {
   font-size: 1.125rem;
   font-weight: bold;
-  color: var(--primary);
+  color: #6366F1;
   margin: 0 0 8px 0;
 }
 
 .collaboration-focus {
-  color: var(--text-muted);
+  color: #64748B;
   font-size: 0.75rem;
   margin: 0;
 }
 
 /* Footer */
 .footer {
-  background-color: var(--surface);
-  border-top: 1px solid var(--border);
+  background-color: #1E293B;
+  border-top: 1px solid #334155;
   margin-top: 64px;
 }
 
@@ -612,7 +594,7 @@
   margin: 0 auto;
   padding: 32px 24px;
   text-align: center;
-  color: var(--text-muted);
+  color: #64748B;
   line-height: 1.75;
 }
 
