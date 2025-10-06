@@ -1,6 +1,7 @@
 import React from 'react';
 import HeroImage from '../../assets/Hero-image.jpg';
 import AboutImage from '../../assets/About-image.jpg';
+import { Link } from 'react-router-dom';
 
 function Home() {
     const scrollToStats = () => {
@@ -11,52 +12,52 @@ function Home() {
     };
 
     const stats = [
-        { 
-            number: "280+", 
-            label: "Astronauts", 
+        {
+            number: "280+",
+            label: "Astronauts",
             sublabel: "from 26 countries",
             icon: (
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{width: '48px', height: '48px'}}>
-                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                    <circle cx="9" cy="7" r="4"/>
-                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ width: '48px', height: '48px' }}>
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                 </svg>
             )
         },
-        { 
-            number: "3,000+", 
-            label: "Scientific Experiments", 
+        {
+            number: "3,000+",
+            label: "Scientific Experiments",
             sublabel: "conducted onboard",
             icon: (
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{width: '48px', height: '48px'}}>
-                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
-                    <polyline points="14 2 14 8 20 8"/>
-                    <line x1="16" y1="13" x2="8" y2="13"/>
-                    <line x1="16" y1="17" x2="8" y2="17"/>
-                    <polyline points="10 9 9 9 8 9"/>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ width: '48px', height: '48px' }}>
+                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+                    <polyline points="14 2 14 8 20 8" />
+                    <line x1="16" y1="13" x2="8" y2="13" />
+                    <line x1="16" y1="17" x2="8" y2="17" />
+                    <polyline points="10 9 9 9 8 9" />
                 </svg>
             )
         },
-        { 
-            number: "408 km", 
-            label: "Orbital Height", 
+        {
+            number: "408 km",
+            label: "Orbital Height",
             sublabel: "above Earth",
             icon: (
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{width: '48px', height: '48px'}}>
-                    <path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/>
-                    <circle cx="12" cy="12" r="3"/>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ width: '48px', height: '48px' }}>
+                    <path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83" />
+                    <circle cx="12" cy="12" r="3" />
                 </svg>
             )
         },
-        { 
-            number: "17,500 mph", 
-            label: "Orbital Speed", 
+        {
+            number: "17,500 mph",
+            label: "Orbital Speed",
             sublabel: "28,000 km/h",
             icon: (
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{width: '48px', height: '48px'}}>
-                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
-                    <polyline points="17 6 23 6 23 12"/>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ width: '48px', height: '48px' }}>
+                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                    <polyline points="17 6 23 6 23 12" />
                 </svg>
             )
         }
@@ -67,10 +68,10 @@ function Home() {
             title: "The Cupola",
             description: "Experience Earth from the window to the world",
             icon: (
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{width: '40px', height: '40px'}}>
-                    <circle cx="12" cy="12" r="10"/>
-                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
-                    <path d="M2 12h20"/>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ width: '40px', height: '40px' }}>
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                    <path d="M2 12h20" />
                 </svg>
             ),
             link: "/cupola"
@@ -79,8 +80,8 @@ function Home() {
             title: "NBL Training",
             description: "Discover how astronauts prepare for spacewalks",
             icon: (
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{width: '40px', height: '40px'}}>
-                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ width: '40px', height: '40px' }}>
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
                 </svg>
             ),
             link: "/nbl"
@@ -89,16 +90,16 @@ function Home() {
             title: "Benefits to Earth",
             description: "Learn how space research improves life on our planet",
             icon: (
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{width: '40px', height: '40px'}}>
-                    <circle cx="12" cy="12" r="5"/>
-                    <line x1="12" y1="1" x2="12" y2="3"/>
-                    <line x1="12" y1="21" x2="12" y2="23"/>
-                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-                    <line x1="1" y1="12" x2="3" y2="12"/>
-                    <line x1="21" y1="12" x2="23" y2="12"/>
-                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ width: '40px', height: '40px' }}>
+                    <circle cx="12" cy="12" r="5" />
+                    <line x1="12" y1="1" x2="12" y2="3" />
+                    <line x1="12" y1="21" x2="12" y2="23" />
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                    <line x1="1" y1="12" x2="3" y2="12" />
+                    <line x1="21" y1="12" x2="23" y2="12" />
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
                 </svg>
             ),
             link: "/benefits"
@@ -107,9 +108,9 @@ function Home() {
             title: "25 Years of History",
             description: "Explore the timeline and achievements of the ISS",
             icon: (
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{width: '40px', height: '40px'}}>
-                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ width: '40px', height: '40px' }}>
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
                 </svg>
             ),
             link: "/history"
@@ -121,8 +122,8 @@ function Home() {
             {/* Hero Section */}
             <section style={styles.hero}>
                 <div style={styles.heroImage}>
-                    <img 
-                        src={HeroImage} 
+                    <img
+                        src={HeroImage}
                         alt="ISS orbiting Earth"
                         style={styles.heroImageElement}
                     />
@@ -131,10 +132,10 @@ function Home() {
                 <div style={styles.heroContent}>
                     <h1 style={styles.heroTitle}>25 Years of Science, Discovery & Innovation</h1>
                     <p style={styles.heroSubtitle}>
-                        The International Space Station: Humanity's laboratory in space, 
+                        The International Space Station: Humanity's laboratory in space,
                         orbiting 408 km above Earth since 1998
                     </p>
-                    <button 
+                    <button
                         style={styles.ctaButton}
                         onClick={scrollToStats}
                         onMouseEnter={(e) => {
@@ -172,47 +173,47 @@ function Home() {
                     <div style={styles.aboutGrid}>
                         <div style={styles.aboutText}>
                             <p style={styles.paragraph}>
-                                The International Space Station (ISS) is a marvel of human engineering 
-                                and international cooperation. It serves as a microgravity laboratory 
-                                where scientific research is conducted in fields such as biology, physics, 
+                                The International Space Station (ISS) is a marvel of human engineering
+                                and international cooperation. It serves as a microgravity laboratory
+                                where scientific research is conducted in fields such as biology, physics,
                                 astronomy, and meteorology.
                             </p>
                             <p style={styles.paragraph}>
-                                Assembled in orbit over more than a decade, the ISS represents a 
-                                partnership between NASA (United States), Roscosmos (Russia), ESA (Europe), 
-                                JAXA (Japan), and CSA (Canada). It has been continuously occupied since 
+                                Assembled in orbit over more than a decade, the ISS represents a
+                                partnership between NASA (United States), Roscosmos (Russia), ESA (Europe),
+                                JAXA (Japan), and CSA (Canada). It has been continuously occupied since
                                 November 2000, making it humanity's permanent foothold in space.
                             </p>
                             <div style={styles.keyFacts}>
                                 <h3 style={styles.factsTitle}>Key Facts:</h3>
                                 <ul style={styles.factsList}>
                                     <li style={styles.factItem}>
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="#6366F1" strokeWidth="3" style={{width: '20px', height: '20px', marginRight: '12px', flexShrink: 0}}>
-                                            <polyline points="20 6 9 17 4 12"/>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="#6366F1" strokeWidth="3" style={{ width: '20px', height: '20px', marginRight: '12px', flexShrink: 0 }}>
+                                            <polyline points="20 6 9 17 4 12" />
                                         </svg>
                                         Completes 16 orbits around Earth daily
                                     </li>
                                     <li style={styles.factItem}>
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="#6366F1" strokeWidth="3" style={{width: '20px', height: '20px', marginRight: '12px', flexShrink: 0}}>
-                                            <polyline points="20 6 9 17 4 12"/>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="#6366F1" strokeWidth="3" style={{ width: '20px', height: '20px', marginRight: '12px', flexShrink: 0 }}>
+                                            <polyline points="20 6 9 17 4 12" />
                                         </svg>
                                         Size of a football field (109m x 73m)
                                     </li>
                                     <li style={styles.factItem}>
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="#6366F1" strokeWidth="3" style={{width: '20px', height: '20px', marginRight: '12px', flexShrink: 0}}>
-                                            <polyline points="20 6 9 17 4 12"/>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="#6366F1" strokeWidth="3" style={{ width: '20px', height: '20px', marginRight: '12px', flexShrink: 0 }}>
+                                            <polyline points="20 6 9 17 4 12" />
                                         </svg>
                                         Weighs approximately 420,000 kg
                                     </li>
                                     <li style={styles.factItem}>
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="#6366F1" strokeWidth="3" style={{width: '20px', height: '20px', marginRight: '12px', flexShrink: 0}}>
-                                            <polyline points="20 6 9 17 4 12"/>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="#6366F1" strokeWidth="3" style={{ width: '20px', height: '20px', marginRight: '12px', flexShrink: 0 }}>
+                                            <polyline points="20 6 9 17 4 12" />
                                         </svg>
                                         Crew of 6-7 astronauts at a time
                                     </li>
                                     <li style={styles.factItem}>
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="#6366F1" strokeWidth="3" style={{width: '20px', height: '20px', marginRight: '12px', flexShrink: 0}}>
-                                            <polyline points="20 6 9 17 4 12"/>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="#6366F1" strokeWidth="3" style={{ width: '20px', height: '20px', marginRight: '12px', flexShrink: 0 }}>
+                                            <polyline points="20 6 9 17 4 12" />
                                         </svg>
                                         Visible from Earth with the naked eye
                                     </li>
@@ -220,8 +221,8 @@ function Home() {
                             </div>
                         </div>
                         <div style={styles.aboutImage}>
-                            <img 
-                                src={AboutImage} 
+                            <img
+                                src={AboutImage}
                                 alt="International Space Station"
                                 style={styles.issImage}
                             />
@@ -236,9 +237,9 @@ function Home() {
                 <h2 style={styles.sectionTitle}>Explore the ISS Experience</h2>
                 <div style={styles.cardsGrid}>
                     {sections.map((section, index) => (
-                        <a 
-                            key={index} 
-                            href={section.link} 
+                        <Link
+                            key={index}
+                            to={section.link}
                             style={styles.navCard}
                             onMouseEnter={(e) => {
                                 e.currentTarget.style.transform = 'translateY(-8px)';
@@ -255,12 +256,12 @@ function Home() {
                             <h3 style={styles.cardTitle}>{section.title}</h3>
                             <p style={styles.cardDescription}>{section.description}</p>
                             <span style={styles.cardArrow}>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{width: '24px', height: '24px'}}>
-                                    <line x1="5" y1="12" x2="19" y2="12"/>
-                                    <polyline points="12 5 19 12 12 19"/>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ width: '24px', height: '24px' }}>
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
                                 </svg>
                             </span>
-                        </a>
+                        </Link>
                     ))}
                 </div>
             </section>
@@ -269,10 +270,10 @@ function Home() {
             <section style={styles.quoteSection}>
                 <div style={styles.quoteContent}>
                     <svg viewBox="0 0 24 24" fill="currentColor" style={styles.quoteIcon}>
-                        <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                        <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
                     </svg>
                     <blockquote style={styles.quote}>
-                        The view of Earth is spectacular. It's a reminder of how fragile 
+                        The view of Earth is spectacular. It's a reminder of how fragile
                         and precious our planet is, and how we must work together to protect it.
                     </blockquote>
                     <p style={styles.quoteAuthor}>— Astronaut Chris Hadfield</p>
